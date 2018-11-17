@@ -1,0 +1,399 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.nav-arrow{
+	padding: 30px 20px 20px 60px;
+	background-color: rgba(0,0,0,0);
+	
+}
+.black{
+	background-color: rgba(0,0,0,0.7);
+
+	
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-image: url("Images/hero-01.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+a:hover{
+	color:#000;
+	border-radius: 10px;
+}
+
+.center{
+	display: block;
+	margin: auto;
+	
+}
+
+
+.line{
+	height: 8px;
+	width: 70px;
+	
+}
+
+.opacity{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.contentSec3{
+	margin: 90px 0px 0px 0px;
+}
+.contentSec3 p{
+	padding: 15px 70px 0px 70px;
+}
+
+.portfolioImg{
+	width: 370px;
+	padding: 0;
+	margin: 0;
+}
+
+
+.teamImg{
+	width: 250px;
+	height: 300px;
+	padding: 0;
+	margin: 15px;
+	float: left;
+}
+
+
+
+nav div span a {
+	margin-top: -10px;
+}
+
+nav button{
+	color:white;
+}
+
+
+#sec1{
+	text-align: center;
+}
+#sec1 img{
+	padding-top: 20%;
+}
+
+
+#sec1 p{
+	margin: 60px 0;
+}
+
+#sec1 input{
+	padding: 15px 60px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+	transition: 0.7s;
+}
+
+#sec1 input:hover{
+	
+	background-color: #fff;
+
+}
+
+
+
+#sec2{
+	margin-top: 10%;
+	margin-bottom: 0;
+	background-image: url("Images/Sep-bot.png");
+	height: 200px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	background-size: cover;
+}
+#sec2 img{
+	padding-top: 70px;
+}
+#sec2 span{
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+#sec3{
+	background-color: #fff;
+	margin-top: 0px;
+	padding-top: 40px;
+	text-align: center;
+}
+
+#sec3 .line{
+	height: 8px;
+	width: 70px;
+	background-color: #2980b9;
+}
+
+
+
+#sec4{
+	margin-bottom: 0;
+
+	background-image: url("Images/hero-02.jpg");
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+
+
+
+#sec4 .line{
+	height: 8px;
+	width: 70px;
+	background-color: #fff;
+}
+
+
+#portfolioContent{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding-left: 10px;
+}
+
+#sec5{
+	margin-bottom: 0;
+	
+	height: 100%;
+	width: 100%;
+	
+	background-color: #fff;
+	
+	text-align: center;
+}
+
+#sec5 .line{
+	background-color: #2980b9 ;
+}
+
+#teamContent{
+	margin:100px 0 ;
+	height: 320px;
+}
+
+
+#sec6{
+	
+
+	background-image: url("Images/hero-03.jpg");
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+#sec6 .line{
+	background-color: #fff ;
+}
+
+#contactText{
+	margin: 30px;
+	padding: 0 350px;
+}
+
+#contactContent{
+	
+	height: 230px;
+}
+
+#footer{
+	padding-bottom: 60px;
+}
+
+
+
+
+
+/*    =========================================  Tipografia   =====================================    */
+
+.nav-arrow a{
+	color:#fff;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+#sec1 p{
+	font-size: 20px;
+	color:#fff;
+}
+#sec1 input{
+	font-size: 20px;
+	color:#fff;
+	font-weight: bold;
+}
+
+
+#sec1 input:hover{
+	
+	color: rgba(0,0,0,1);
+}
+
+
+#sec2 span{
+	color:#fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#sec3 h2{
+	color:#2980b9 ;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+
+}
+
+#sec3 h3{
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+#sec4 h2{
+	margin-top: 50px;
+	color:#fff ;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+
+}
+
+#sec5 h2{
+	margin-top: 50px;
+	color:#2980b9 ;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+
+}
+
+#sec6 h2{
+	margin-top: 50px;
+	color:#fff ;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+
+}
+
+#sec6 span{
+	color:#fff;
+}
+
+#contactText p{
+	color: #fff;
+	font-size: 15px;
+}
+
+
+/* ====================== MEDIA QUERYS ======================*/
+
+
+@media only screen and (max-width: 768px){
+	.nav-arrow{
+		padding: 30px 20px 20px 60px;
+		background-color: rgba(0,0,0,0.7);
+	}
+
+
+	.portfolioImg{
+		width: 370px;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+
+	.teamImg{
+		width: 170px;
+		height: 200px;
+		margin: 15px;
+		float: left;
+	}
+
+	#contactText{
+	margin: 30px;
+	padding: 0 0;
+	}
+
+	#contactContent div img{
+		width: 50px;
+	}
+
+	#contactContent div span{
+		font-size: 12px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.nav-arrow{
+		background-color: rgba(0,0,0,0.7);
+	}
+
+	.portfolioImg{
+		width: 370px;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+
+	.teamImg{
+		width: 200px;
+		height: 220px;
+		margin: 15px;
+		float: left;
+	}
+	
+
+	#contactText{
+	margin: 30px;
+	padding: 0 100px;
+	}
+
+	#contactContent div img{
+		width: 50px;
+	}
+
+}
+@media only screen and (min-width: 992px){
+
+	.teamImg{
+		width: 210px;
+		height: 250px;
+		margin: 15px 10px;
+		float: left;
+	}
+
+	#contactContent div img{
+		width: 80px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	
+	.teamImg{
+		width: 250px;
+		height: 300px;
+		margin: 15px;
+		float: left;
+	}
+}

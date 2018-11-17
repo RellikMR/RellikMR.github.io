@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Arrow  </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="icon" type="icon" href="Icons/logo.png">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(window).on("scroll",function() {
+			if($(window).scrollTop()){
+				$('nav').addClass ('black');
+			}else{
+				$('nav').removeClass ('black');
+			}
+		});
+		var c = 0; 
+		function icon(){
+			c++;
+			if (c %2 == 0){
+				$('#toogleNav').removeClass('glyphicon glyphicon-menu-up');
+				$('#toogleNav').addClass('glyphicon glyphicon-menu-down');
+				
+			}else{
+				$('#toogleNav').removeClass('glyphicon glyphicon-menu-down');
+				$('#toogleNav').addClass('glyphicon glyphicon-menu-up');
+			
+			}
+		}
+
+		function kwnowmore(){
+			alert("Quer conhecer oq? A empresa nem existe!");
+		}
+	
+
+		
+	</script>
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body class="opacity" >
+
+
+	<header>
+
+		<nav class="navbar nav-arrow navbar-fixed-top ">
+
+				 
+			<div class="container " >
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#colapsado" aria-expanded="false" onclick="icon()">
+				 	 <span class="sr-only">Toggle navigation</span>
+        			<span  id="toogleNav" class="glyphicon glyphicon-menu-down"></span>
+       			
+        		
+				 </button>
+				<span>
+					<a href="index.html" class="navbar-brand">
+						<span><</span>
+						<img src="Icons/pencil.png" style="display: inline">
+						<span>></span>
+					</a>	
+				</span>
+				
+				<div id="colapsado" class="collapse navbar-collapse">
+					
+					<ul class="navbar-right nav navbar-nav " id="itens">
+					
+						<li><a href="#sec2"> Services </a></li>
+						<li><a href="#sec4"> Portfolio </a></li>
+						<li><a href="#sec5"> Team </a></li>
+						<li><a href="#sec6"> Contact </a></li>
+					</ul>
+				</div>
+
+			</div>		
+		</nav>
+
+	</header>
+
+
+	<section id="sec1" class="container">
+
+		<img src="Icons/logo.png" class="center" width="130px">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien arcu, congue in erat eget, ornare dapibus mi. Maecenas eu erat venenatis, efficitur ante et, viverra velit
+		</p>
+
+		<input type="button" name="kwnowMore" value="Know More" onclick="kwnowmore()">
+	</section>
+
+
+	<section id="sec2">
+		<img src="Icons/mouse_scrolling-50.png" class="center">
+		<span  class="center"> SCROLL DOWN</span>
+	</section>
+
+	<section id="sec3" >
+
+		<div class="container">
+			<h2> OUR SERVICES </h2>
+			<div  class="center line" ></div>
+
+			<div class="col-md-4 contentSec3">
+				<img src="Icons/idea-100 (1).png">
+				<h3>Idea</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien arcu, congue in erat eget, ornare dapibus mi. Maecenas eu erat venenatis, efficitur ante et, viverra velit</p>
+			</div>
+			<div class="col-md-4 contentSec3">
+
+				<img src="Icons/design-100.png">
+				<h3>Idea</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien arcu, congue in erat eget, ornare dapibus mi. Maecenas eu erat venenatis, efficitur ante et, viverra velit</p>
+			</div>
+			<div class="col-md-4 contentSec3">
+				<img src="Icons/code-100.png">
+				<h3>Idea</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien arcu, congue in erat eget, ornare dapibus mi. Maecenas eu erat venenatis, efficitur ante et, viverra velit</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="sec4">
+		<div class="opacity">
+			<img src="Images/Sep-top.png" class="center" width="100%">
+			<div class="container">
+
+				<h2 > OUR PORTFOLIO </h2>
+				<div class=" line center"></div>
+
+				<div id="portfolioContent">
+					<img src="Images/p1.jpg" class="portfolioImg">
+					<img src="Images/p2.jpg" class="portfolioImg">
+					<img src="Images/p3.jpg" class="portfolioImg">
+					<img src="Images/p4.jpg" class="portfolioImg">
+					<img src="Images/p5.jpg" class="portfolioImg">
+					<img src="Images/p6.jpg" class="portfolioImg">
+					
+				</div>
+
+			</div>
+
+			<img src="Images/Sep-bot.png" class="center" width="100%">
+
+		</div>
+
+
+	</section>
+
+	<section id="sec5">
+		<div >
+		
+			<div class="container">
+
+				<h2 > TEAM </h2>
+				<div class=" line center"></div>
+
+				<div id="teamContent">
+					<img src="Images/team1.jpg" class="teamImg">
+					<img src="Images/team2.jpg" class="teamImg">
+					<img src="Images/team3.jpg" class="teamImg">
+					<img src="Images/team4.jpg" class="teamImg">
+
+					
+				</div>
+
+			</div>
+			
+		</div>
+
+
+	</section>
+
+	<section id="sec6">
+		<div class="opacity">
+			<img src="Images/Sep-top.png" class="center" width="100%">
+			<div class="container">
+
+				<h2 > Contact </h2>
+				<div class=" line center"></div>
+
+
+				<div id="contactText">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien arcu, congue in erat eget, ornare dapibus mi. Maecenas eu erat venenatis, efficitur ante et, viverra velit</p>
+				</div>
+	
+						<div id="contactContent">
+							<div class="col-xs-3">
+
+								<img src="Icons/phone_office-100.png" class="contactImage"><br><br>
+								<span><b>Customer Care</b></span><br>
+								<span>(99)12345-678</span>
+
+							</div>
+							<div class="col-xs-3">
+
+								<img src="Icons/read_message-100.png" class="contactImage"><br><br>
+								<span><b>E-mail</b></span><br>
+								<span>email@arrow.com</span>
+
+							</div>
+							<div class="col-xs-3">
+
+								<img src="Icons/twitter-100.png" class="contactImage" ><br><br>
+								<span><b>Twitter</b></span><br>
+								<span>@Arrow</span>
+
+							</div>
+							<div class="col-xs-3">
+
+								<img src="Icons/facebook-100.png" class="contactImage"><br><br>
+								<span><b>Facebook</b></span><br>
+								<span>ArrowAgency</span>
+
+							</div>
+					</div>
+
+					<div id="footer">
+						<span class="center">Lorem ipsum dolor sit amet</span>
+					</div>
+
+		</div>
+			
+
+	</div>
+
+	</section>
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
